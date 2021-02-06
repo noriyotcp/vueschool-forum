@@ -18,6 +18,7 @@ module.exports = {
 
   rules: {
     quotes: ['warn', 'single'],
+    'space-before-function-paren': ['error', 'always'],
     'vue/mustache-interpolation-spacing': 'warn',
   },
 };

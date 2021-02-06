@@ -48,7 +48,7 @@ export default {
       type: String
     }
   },
-  data() {
+  data () {
     return {
       threads: sourceData.threads,
       posts: sourceData.posts,
@@ -61,10 +61,10 @@ export default {
     }
   },
   methods: {
-    postById(postId) {
+    postById (postId) {
       return this.posts.find((p) => p.id === postId);
     },
-    userById(userId) {
+    userById (userId) {
       return this.users.find((u) => u.id === userId);
     },
   },
