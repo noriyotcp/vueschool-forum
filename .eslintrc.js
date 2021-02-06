@@ -1,14 +1,16 @@
 module.exports = {
-  "root": true,
-  "env": {
-    "node": true
+  'root': true,
+  'env': {
+    'node': true
   },
-  "extends": [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended"
+  'extends': [
+    'plugin:vue/vue3-essential',
+    'eslint:recommended'
   ],
-  "parserOptions": {
-    "parser": "@babel/eslint-parser"
+  'parserOptions': {
+    'parser': '@babel/eslint-parser'
   },
-  "rules": {}
+  'rules': {
+    'quotes': ['warn', 'single']
+  }
 }
