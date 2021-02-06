@@ -1,16 +1,18 @@
 module.exports = {
-  'root': true,
-  'env': {
-    'node': true
+  root: true,
+
+  env: {
+    node: true,
   },
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended'
-  ],
-  'parserOptions': {
-    'parser': '@babel/eslint-parser'
+
+  extends: ['plugin:vue/vue3-essential', 'eslint:recommended'],
+
+  parserOptions: {
+    parser: '@babel/eslint-parser',
   },
-  'rules': {
-    'quotes': ['warn', 'single']
-  }
-}
+
+  rules: {
+    quotes: ['warn', 'single'],
+    'vue/mustache-interpolation-spacing': 'warn',
+  },
+};
