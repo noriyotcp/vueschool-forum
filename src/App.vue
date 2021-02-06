@@ -1,16 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <div class="container"><page-home /></div>
+  <div class="container">
+    <!-- url が / のときは PageHome component を表示する -->
+    <router-view />
+  </div>
 </template>
 
 <script>
-import PageHome from './components/PageHome.vue'
 
 export default {
   name: 'App',
-  components: {
-    PageHome
-  }
 }
 </script>
 
