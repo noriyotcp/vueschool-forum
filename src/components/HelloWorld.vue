@@ -33,7 +33,7 @@
 
 <script>
 import sourceData from '@/data.json';
-console.log(sourceData)
+console.log(sourceData);
 export default {
   name: 'HelloWorld',
   props: {
@@ -42,9 +42,9 @@ export default {
   data () {
     return {
       threads: sourceData.threads
-    }
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
