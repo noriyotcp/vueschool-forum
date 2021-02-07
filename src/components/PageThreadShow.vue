@@ -52,12 +52,12 @@ export default {
     return {
       threads: sourceData.threads,
       posts: sourceData.posts,
-      users: sourceData.users,
-    }
+      users: sourceData.users
+    };
   },
   computed: {
     thread () {
-      return this.threads.find(thread => thread.id === this.id)
+      return this.threads.find((thread) => thread.id === this.id);
     }
   },
   methods: {
@@ -66,8 +66,8 @@ export default {
     },
     userById (userId) {
       return this.users.find((u) => u.id === userId);
-    },
-  },
+    }
+  }
 };
 </script>
 

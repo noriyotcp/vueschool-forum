@@ -47,7 +47,7 @@ export default {
     return {
       threads: sourceData.threads,
       posts: sourceData.posts,
-      users: sourceData.users,
+      users: sourceData.users
     };
   },
   methods: {
@@ -56,8 +56,8 @@ export default {
     },
     userById (userId) {
       return this.users.find((u) => u.id === userId);
-    },
-  },
+    }
+  }
 };
 </script>
 

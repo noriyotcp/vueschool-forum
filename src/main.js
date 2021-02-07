@@ -20,7 +20,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes, // short for `routes: routes`
+  routes // short for `routes: routes`
 });
 
 const forumApp = createApp(App);

@@ -2,23 +2,25 @@ module.exports = {
   root: true,
 
   env: {
-    node: true,
+    node: true
   },
 
   extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'prettier',
-    'prettier/vue',
+    'prettier/vue'
   ],
 
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: '@babel/eslint-parser'
   },
 
   rules: {
     quotes: ['warn', 'single'],
     'space-before-function-paren': ['error', 'always'],
-    'vue/mustache-interpolation-spacing': 'warn',
-  },
+    'semi': ['error', 'always'],
+    'comma-dangle': ['error', 'never'],
+    'vue/mustache-interpolation-spacing': 'warn'
+  }
 };
