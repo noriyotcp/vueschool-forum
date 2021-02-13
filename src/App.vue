@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Vue logo" src="./assets/logo.png" />
   <div class="container">
     <!-- url が / のときは PageHome component を表示する -->
     <router-view />
@@ -7,12 +7,11 @@
 </template>
 
 <script>
-
 export default {
   name: 'App'
 };
 </script>
 
 <style>
-@import "assets/style.css";
+@import 'assets/style.css';
 </style>
