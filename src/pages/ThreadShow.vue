@@ -1,6 +1,8 @@
 <template>
   <h1>{{ thread.title }}</h1>
 
+  <post-list :posts="threadPosts" />
+
   <div class="post-list">
     <div v-for="postId in thread.posts" :key="postId" class="post">
       <div class="user-info">
@@ -42,6 +44,7 @@
 <script>
 import sourceData from '@/data.json';
 export default {
+  name: 'ThreadShow',
   props: {
     id: {
       required: true,
@@ -58,6 +61,9 @@ export default {
   computed: {
     thread () {
       return this.threads.find((thread) => thread.id === this.id);
+    },
+    threadPosts () {
+      return this.posts.filter((post) => post.threadId === this.id);
     }
   },
   methods: {
