@@ -1,7 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <div class="container">
-    <!-- url が / のときは PageHome component を表示する -->
+    <!-- url が / のときは Home component を表示する -->
     <router-view />
   </div>
 </template>
