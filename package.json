@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.1",
+    "dayjs": "^1.10.4",
     "vue": "^3.0.4",
     "vue-router": "4"
   },
