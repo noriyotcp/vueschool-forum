@@ -1,9 +1,11 @@
 import router from '@/router';
+import store from '@/store';
 import { createApp } from 'vue';
 import App from './App.vue';
 
 const forumApp = createApp(App);
 forumApp.use(router);
+forumApp.use(store);
 
 const requireComponent = require.context(
   './components',
